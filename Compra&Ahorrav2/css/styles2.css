@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+}
+
+/* Estilo de la barra de navegación (navbar) */
+#navbar {
+    background-color:  rgb(253, 210, 72); 
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: white;
+}
+
+#navbar a {
+    color: white; /* Cambiar texto a blanco */
+    font-weight: 600;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    color: rgb(86, 202, 57); /* Cambiar color al pasar el ratón */
+}
+
+/*Encabezado*/
+header {
+    display: flex;
+    min-height: 60px;
+    background-color: #c71d0f;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    font-family: sans-serif;
+    object-fit: cover;
+    margin: 0%;
+}
+
+/* Estilo de los enlaces en el navbar */
+#navbar a {
+    color: rgb(0, 0, 0); /* Enlaces blancos */
+}
+
+#navbar a:hover {
+    color: black; /* Enlaces se vuelven negros al pasar el ratón */
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+    nav {
+        padding: 15px 0px;
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo_img {
+    height: 200px;
+}
+
+.reservas-section {
+    margin: 30px auto;  /* Añade un margen de 30px arriba y abajo */
+    padding: 20px;
+    max-width: 800px; /* Limita el ancho máximo de la sección */
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo para cada reserva */
+.reserva {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px; /* Añade margen entre las reservas */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilo de la información de la reserva */
+.reserva-info {
+    width: 70%;
+}
+
+/* Estilo para la información de la reserva */
+.reserva-info p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/* Estilo para los botones de acciones */
+.reserva-acciones {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.editar {
+    background-color: #f4a261;
+    color: white;
+}
+
+.cancelar {
+    background-color: #e76f51;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Estilo del formulario de reserva */
+.formulario-reserva {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #555; /* Gris para los títulos */
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilo para los campos del formulario */
+.formulario-reserva label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.formulario-reserva input,
+.formulario-reserva select,
+.formulario-reserva textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.formulario-reserva input[type="date"],
+.formulario-reserva input[type="time"] {
+    width: 48%;
+    display: inline-block;
+    margin-right: 4%;
+}
+
+.formulario-reserva input[type="text"] {
+    width: 100%;
+}
+
+.formulario-reserva button {
+    width: 100%;
+    background-color: #1f53c5;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 12px;
+    color: white;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.formulario-reserva button:hover {
+    background-color: #333;
+}
+
+/* Tabla para listar reservas */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f8f9fa;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+
+/* Estilos para el login */
+.login {
+    width: 100%;
+    max-width: 400px;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 8px;
+    box-shadow: 7px 13px 20px #000;
+}
+
+.login h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.login .datos {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.login .boton {
+    width: 100%;
+    background: rgb(253, 210, 72);
+    border: none;
+    border-radius: 20px;
+    padding: 12px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login .boton:hover {
+    background-color: #333;
+}
+
+/* Estilo para el enlace de registro */
+.login p a {
+    color: #1f53c5;
+}
+
+.login p a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    min-height: 80vh; /* Esto garantiza que el formulario esté centrado verticalmente en una vista de altura completa */
+    padding: 20px;
+}
+
+/*Formulario Generar Informe*/
+.informe-generar {
+    width: 100%;
+    max-width: 600px; /* Ajusta el ancho máximo */
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Los elementos dentro del formulario estarán alineados verticalmente */
+    align-items: center; /* Centra los elementos dentro del formulario */
+    justify-content: center; /* Centra los elementos dentro del formulario */
+}
+
+label {
+    font-size: 16px;
+    color: #333;
+    width: 100%; /* Hace que el label ocupe todo el ancho del formulario */
+    text-align: left; /* Alinea el texto de la etiqueta a la izquierda */
+    margin-bottom: 5px;
+}
